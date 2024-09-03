@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            font-family: monospace;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        nav div{
+            margin-bottom: 20px;
+        }
+        nav div > a{
+            color: mediumseagreen;
+            margin-right: 16px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        nav div > a:hover{
+            text-decoration: underline;
+        }
+        .login-form{
+            height: 836px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid salmon; */
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+        .login input{
+            margin-top: 20px;
+        }
+        .login input[type="email"],input[type="password"]{
+            padding: 12px 50px 12px 18px;
+            font-size: 18px;
+            font-weight: 100;
+            border-radius: 8px;
+            border: none;
+            border-top: 2px solid mediumseagreen;
+            border-bottom: 2px solid mediumslateblue;
+            border-left: 2px solid mediumturquoise;
+            border-right: 2px solid sandybrown;
+            outline: none;
+        }
+        .login input[type="submit"]{
+            margin: 24px auto;
+            padding: 12px 24px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            border: 1px solid mediumseagreen;
+            background: transparent;
+            color: mediumslateblue;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .login input[type="submit"]:hover{
+            background: transparent;
+            color: mediumseagreen;
+            border: 1px solid mediumpurple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy & Policy</a>
+            </div>
+            <div>
+                <a style="color: mediumslateblue; text-decoration: underline;" href="#">Log In</a>
+                <a style="color: mediumslateblue;" href="#">Sign In</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="login-form">
+            <form class="login" action="">
+                <h2>Please Login ...</h2>
+                <input type="email" placeholder="Enter your email ..." required><input type="password" placeholder="Enter your password ..." readonly>
+                <input type="submit" value="Log In">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
